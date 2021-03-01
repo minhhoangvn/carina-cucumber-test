@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="Carina Demo Tests - Hello World" parallel="methods">
+
+	
+	<test name="Demo">
+		<classes>
+			<class name="com.toilatester.runner.DemoRunner" />
+		</classes>
+	</test>
+
+</suite>
