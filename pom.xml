@@ -12,12 +12,24 @@
 		<slf4j.api.version>1.7.30</slf4j.api.version>
 		<log4j.api.version>2.13.3</log4j.api.version>
 		<log4j.core.version>2.13.3</log4j.core.version>
+		<guice.version>5.0.1</guice.version>
+		<logback.version>1.2.3</logback.version>
+		<reportportal.javaagent.version>5.0.2</reportportal.javaagent.version>
+		<reportportal.logback.version>5.0.3</reportportal.logback.version>
 		<maven.surefire.plugin.version>3.0.0-M4</maven.surefire.plugin.version>
 		<maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
 		<java.version>11</java.version>
 		<suite>demo</suite>
 	</properties>
 	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>bintray-epam-reportportal</id>
+			<name>bintray</name>
+			<url>http://dl.bintray.com/epam/reportportal</url>
+		</repository>
 		<repository>
 			<id>qaprosoft_snapshots</id>
 			<name>Qaprosoft Snapshots</name>
@@ -68,6 +80,27 @@
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 			<version>${log4j.core.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>${guice.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.epam.reportportal</groupId>
+			<artifactId>agent-java-cucumber6</artifactId>
+			<version>${reportportal.javaagent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.epam.reportportal</groupId>
+			<artifactId>logger-java-logback</artifactId>
+			<version>${reportportal.logback.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
 		</dependency>
 	</dependencies>
 	<build>

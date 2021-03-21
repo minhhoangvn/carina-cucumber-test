@@ -9,10 +9,32 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1,403</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,253</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.toilatester.runner.DemoRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1614558404168</td><td rowspan="1">223</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.toilatester.runner.DemoRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1616319590427</td><td rowspan="1">576</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.toilatester.runner.DemoRunner</td><td><a href="#m1">feature</a></td><td rowspan="4">1616319591156</td><td rowspan="4">85</td></tr><tr class="passedeven"><td><a href="#m2">feature</a></td></tr><tr class="passedeven"><td><a href="#m3">feature</a></td></tr><tr class="passedeven"><td><a href="#m4">feature</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.toilatester.runner.DemoRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Sunday isn&apos;t Friday&quot;</td><td>&quot;Is it Friday yet?&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.toilatester.runner.DemoRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Sunday isn&apos;t Friday&quot;</td><td>&quot;Is it my date&quot;</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages"> TEST [Is it my date (Sunday isn't Friday)] FAILED at [16:39:51 2021-03-21] - expected [Sunday] but found [Friday]
+
+org.testng.Assert.fail(Assert.java:99)
+org.testng.Assert.failNotEquals(Assert.java:1037)
+org.testng.Assert.assertEqualsImpl(Assert.java:140)
+org.testng.Assert.assertEquals(Assert.java:122)
+org.testng.Assert.assertEquals(Assert.java:629)
+org.testng.Assert.assertEquals(Assert.java:639)
+com.toilatester.steps.Common.verifyDate(Common.java:32)
+✽.I should be told "Sunday"(file:///Users/minhhoang/Desktop/carina-cucumber-test/src/test/resources/features/Demo.feature:7)</div></td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Sunday] but found [Friday]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.toilatester.steps.Common.verifyDate(Common.java:32)
+	at ✽.I should be told &quot;Sunday&quot;(file:///Users/minhhoang/Desktop/carina-cucumber-test/src/test/resources/features/Demo.feature:7)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.toilatester.runner.DemoRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test with few parameter in method&quot;</td><td>&quot;Test with two parameters&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.toilatester.runner.DemoRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Sunday isn&apos;t Sunday&quot;</td><td>&quot;Is it my date&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.toilatester.runner.DemoRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test with few parameter in method&quot;</td><td>&quot;Test with two parameters&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.toilatester.runner.DemoRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test with few parameter in method&quot;</td><td>&quot;Test with two parameters&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
