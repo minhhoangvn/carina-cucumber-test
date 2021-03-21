@@ -1,5 +1,7 @@
+@FullTestTag @ModuleTag
 Feature: Test with two parameters
 
+  @testDemoTag @testDemoTagFeature
   Scenario Outline: Test with few parameter in method
     Given I have <number> <item> in my pocket
     When I eat one
