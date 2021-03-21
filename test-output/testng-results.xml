@@ -1,89 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[ TEST [Is it my date (Sunday isn't Friday)] FAILED at [16:39:51 2021-03-21] - expected [Sunday] but found [Friday]
-
-org.testng.Assert.fail(Assert.java:99)
-org.testng.Assert.failNotEquals(Assert.java:1037)
-org.testng.Assert.assertEqualsImpl(Assert.java:140)
-org.testng.Assert.assertEquals(Assert.java:122)
-org.testng.Assert.assertEquals(Assert.java:629)
-org.testng.Assert.assertEquals(Assert.java:639)
-com.toilatester.steps.Common.verifyDate(Common.java:32)
-✽.I should be told "Sunday"(file:///Users/minhhoang/Desktop/carina-cucumber-test/src/test/resources/features/Demo.feature:7)]]>
-    </line>
   </reporter-output>
-  <suite started-at="2021-03-21T16:39:50 ICT" name="Default suite" finished-at="2021-03-21T16:39:53 ICT" duration-ms="3253">
+  <suite started-at="2021-03-21T17:22:46 ICT" name="Default suite" finished-at="2021-03-21T17:22:48 ICT" duration-ms="2435">
     <groups>
       <group name="cucumber">
-        <method signature="CucumberRunner.feature(io.cucumber.testng.PickleWrapper, com.qaprosoft.carina.core.foundation.cucumber.FeatureWrapperCustomName)[pri:0, instance:com.toilatester.runner.DemoRunner@403f7aa2]" name="feature" class="com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner"/>
+        <method signature="CucumberRunner.feature(io.cucumber.testng.PickleWrapper, com.qaprosoft.carina.core.foundation.cucumber.FeatureWrapperCustomName)[pri:0, instance:com.toilatester.runner.DemoRunner@121cf6f4]" name="feature" class="com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-03-21T16:39:50 ICT" name="Default test" finished-at="2021-03-21T16:39:53 ICT" duration-ms="3253">
+    <test started-at="2021-03-21T17:22:46 ICT" name="Default test" finished-at="2021-03-21T17:22:48 ICT" duration-ms="2435">
       <class name="com.toilatester.runner.DemoRunner">
-        <test-method signature="feature(io.cucumber.testng.PickleWrapper, com.qaprosoft.carina.core.foundation.cucumber.FeatureWrapperCustomName)[pri:0, instance:com.toilatester.runner.DemoRunner@403f7aa2]" started-at="2021-03-21T16:39:50 ICT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-03-21T16:39:51 ICT" duration-ms="576" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Sunday isn't Friday"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Is it my date"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Sunday] but found [Friday]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Sunday] but found [Friday]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.toilatester.steps.Common.verifyDate(Common.java:32)
-at ✽.I should be told "Sunday"(file:///Users/minhhoang/Desktop/carina-cucumber-test/src/test/resources/features/Demo.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[ TEST [Is it my date (Sunday isn't Friday)] FAILED at [16:39:51 2021-03-21] - expected [Sunday] but found [Friday]
-
-org.testng.Assert.fail(Assert.java:99)
-org.testng.Assert.failNotEquals(Assert.java:1037)
-org.testng.Assert.assertEqualsImpl(Assert.java:140)
-org.testng.Assert.assertEquals(Assert.java:122)
-org.testng.Assert.assertEquals(Assert.java:629)
-org.testng.Assert.assertEquals(Assert.java:639)
-com.toilatester.steps.Common.verifyDate(Common.java:32)
-✽.I should be told "Sunday"(file:///Users/minhhoang/Desktop/carina-cucumber-test/src/test/resources/features/Demo.feature:7)]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method signature="feature(io.cucumber.testng.PickleWrapper, com.qaprosoft.carina.core.foundation.cucumber.FeatureWrapperCustomName)[pri:0, instance:com.toilatester.runner.DemoRunner@403f7aa2]" started-at="2021-03-21T16:39:51 ICT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-03-21T16:39:51 ICT" duration-ms="80" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Sunday isn't Sunday"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Is it my date"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method signature="feature(io.cucumber.testng.PickleWrapper, com.qaprosoft.carina.core.foundation.cucumber.FeatureWrapperCustomName)[pri:0, instance:com.toilatester.runner.DemoRunner@403f7aa2]" started-at="2021-03-21T16:39:51 ICT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-03-21T16:39:51 ICT" duration-ms="85" status="PASS">
+        <test-method signature="feature(io.cucumber.testng.PickleWrapper, com.qaprosoft.carina.core.foundation.cucumber.FeatureWrapperCustomName)[pri:0, instance:com.toilatester.runner.DemoRunner@121cf6f4]" started-at="2021-03-21T17:22:46 ICT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-03-21T17:22:46 ICT" duration-ms="370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,7 +26,7 @@ com.toilatester.steps.Common.verifyDate(Common.java:32)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method signature="feature(io.cucumber.testng.PickleWrapper, com.qaprosoft.carina.core.foundation.cucumber.FeatureWrapperCustomName)[pri:0, instance:com.toilatester.runner.DemoRunner@403f7aa2]" started-at="2021-03-21T16:39:51 ICT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-03-21T16:39:51 ICT" duration-ms="41" status="PASS">
+        <test-method signature="feature(io.cucumber.testng.PickleWrapper, com.qaprosoft.carina.core.foundation.cucumber.FeatureWrapperCustomName)[pri:0, instance:com.toilatester.runner.DemoRunner@121cf6f4]" started-at="2021-03-21T17:22:46 ICT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-03-21T17:22:46 ICT" duration-ms="45" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,7 +42,7 @@ com.toilatester.steps.Common.verifyDate(Common.java:32)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method signature="feature(io.cucumber.testng.PickleWrapper, com.qaprosoft.carina.core.foundation.cucumber.FeatureWrapperCustomName)[pri:0, instance:com.toilatester.runner.DemoRunner@403f7aa2]" started-at="2021-03-21T16:39:51 ICT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-03-21T16:39:51 ICT" duration-ms="38" status="PASS">
+        <test-method signature="feature(io.cucumber.testng.PickleWrapper, com.qaprosoft.carina.core.foundation.cucumber.FeatureWrapperCustomName)[pri:0, instance:com.toilatester.runner.DemoRunner@121cf6f4]" started-at="2021-03-21T17:22:46 ICT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-03-21T17:22:46 ICT" duration-ms="41" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -131,11 +58,11 @@ com.toilatester.steps.Common.verifyDate(Common.java:32)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method is-config="true" signature="tearDownClass(org.testng.ITestContext)[pri:0, instance:com.toilatester.runner.DemoRunner@403f7aa2]" started-at="2021-03-21T16:39:51 ICT" name="tearDownClass" finished-at="2021-03-21T16:39:53 ICT" duration-ms="2286" status="PASS">
+        <test-method is-config="true" signature="tearDownClass(org.testng.ITestContext)[pri:0, instance:com.toilatester.runner.DemoRunner@121cf6f4]" started-at="2021-03-21T17:22:46 ICT" name="tearDownClass" finished-at="2021-03-21T17:22:48 ICT" duration-ms="1839" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@191b44ca]]>
+                <![CDATA[org.testng.TestRunner@3cacc87]]>
               </value>
             </param>
           </params>

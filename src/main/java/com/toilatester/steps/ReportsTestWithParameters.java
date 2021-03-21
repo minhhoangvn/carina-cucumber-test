@@ -1,33 +1,39 @@
 package com.toilatester.steps;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.Calendar;
+
 import org.testng.Assert;
+
+import com.toilatester.core.listener.LogReportListener;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class ReportsTestWithParameters {
-	private static final Logger LOGGER = LoggerFactory.getLogger(ReportsTestWithParameters.class);
 	private int itemsCount;
 
+	@SuppressWarnings("static-access")
 	@Given("I have {int} {string} in my pocket")
 	public void iHaveNumberItemInMyPocket(int number, String item) {
 		itemsCount = number;
-		LOGGER.info("I have {} {} in my pocket", number, item);
+		LogReportListener.getReportPortal().emitLog(String.format("I have {%d} {%s} in my pocket", number, item),
+				"INFO", Calendar.getInstance().getTime());
 
 	}
 
+	@SuppressWarnings("static-access")
 	@When("^I eat one$")
 	public void iEatOne() {
 		itemsCount -= 1;
-		LOGGER.info("I eat one");
+		LogReportListener.getReportPortal().emitLog("I eat one", "INFO", Calendar.getInstance().getTime());
 	}
 
+	@SuppressWarnings("static-access")
 	@Then("I have {int} in my pocket")
 	public void iHaveResultInMyPocket(int result) {
 		Assert.assertEquals(result, itemsCount);
-		LOGGER.info("I have {} in my pocket", result);
+		LogReportListener.getReportPortal().emitLog(String.format("I have {%d} in my pocket", result), "INFO",
+				Calendar.getInstance().getTime());
 	}
 }
